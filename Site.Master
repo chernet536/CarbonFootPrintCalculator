@@ -6,13 +6,14 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - CFT Application</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="Content/styles.css" />
 
 </head>
 <body>
@@ -36,24 +37,22 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" runat="server" href="~/">Carbon Foot Print Tracker Application</a>
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light">
+            <div class="container navContainer">
+                <a class="navbar-brand mr-auto" runat="server" href="~/"> CFT.APP </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                   
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-end">
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
-                            <ul class="navbar-nav navbar-right">
-                              
-                                <li><a runat="server" class="nav-link" href="~/Account/Login">Log in</a></li>
+                            <ul class="navbar-nav ml-auto">
+                                <li><a runat="server" href="~/Account/Login" id ="loginButton" class="btn btn-primary btn-md"> Sign in </a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
-                            <ul class="navbar-nav navbar-right">
+                            <ul class="navbar-nav ml-auto">
                                 <li><a runat="server" class="nav-link" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
                                     <asp:LoginStatus runat="server" CssClass="nav-link" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
@@ -64,6 +63,7 @@
                 </div>
             </div>
         </nav>
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
