@@ -1,14 +1,14 @@
 ﻿/* Content specific styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body {
     background-color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
 .container {
     background-color: #ffffff;
     border-radius: 8px;
-    
     padding: 20px 30px;
     margin: 10px auto;
 }
@@ -17,21 +17,26 @@ body {
     border: none;
 }
 
-h1 {
+h1, h3, h4 {
     color: #4CAF50;
+}
+
+h1 {
+    padding-bottom: 15px;
 }
 
 .lead {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .btn-primary {
     color: #fff;
     background-color: #4CAF50;
     border: 2px solid #4CAF50;
-    padding: 10px 40px;
+    padding: 10px 60px;
     font-size: 18px;
     text-decoration: none;
     border-radius: 30px;
@@ -60,7 +65,7 @@ h1 {
 }
 
 a:hover {
-    color: #45a049;
+    color: #4CAF50;
 }
 
 /* Footer styles */
@@ -77,3 +82,26 @@ footer {
 .row-body {
     margin-top: -50px;
 }
+
+.card-body {
+    padding: 30px;
+}
+
+.btn-link, .btn-link:active, .btn-link:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.register-link {
+    color: #4CAF50 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+
+#registrationForm {
+    margin-top: -30%;
+    margin-left: -10%;
+}
+
+

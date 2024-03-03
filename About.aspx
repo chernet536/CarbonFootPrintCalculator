@@ -4,16 +4,18 @@
 
     <main>
         <section class="row" aria-labelledby="title">
-            <h1 id="title">Carbon Foot Print Tracker Application</h1>
+            <p> <br /> </p>
+            <h1 class = "text-center"> Carbon Footprint Trackering </h1>
+            <br />
             <p class="lead">A carbon footprint is the total amount of greenhouse gases, specifically carbon dioxide and other carbon compounds, that are emitted directly or indirectly by an individual, organization, event, or product throughout its lifecycle. It is typically measured in units of carbon dioxide equivalents (CO2e)
                 to account for the different global warming potentials of various greenhouse gases.</p>
-            <h1 id="title">Why Tracking Carbon Foot Print Matters?</h1>
+            <p> <br /> </p>
+            <h4> Why Tracking Carbon Foot Print Matters? </h4>
             <p class="lead">
                 Tracking carbon emissions is essential for organizations for several reasons:
 
             </p><br />
             <p class="lead">
- 
             <strong>Environmental Responsibility:</strong> By monitoring their carbon footprint, organizations can better understand their impact on the environment. This awareness often leads to initiatives aimed at reducing emissions, such as implementing energy-efficient practices or investing in renewable energy sources.
             </p><br />
             <p class="lead">
@@ -28,7 +30,6 @@
             <p class="lead">
                 <strong>Risk Management:</strong> Climate change poses significant risks to businesses, including supply chain disruptions, increased operational costs, and reputational damage. By tracking their carbon emissions and implementing strategies to mitigate them, organizations can better prepare for the potential impacts of climate change.
             </p>
-            <p><a href="#" class="btn btn-primary btn-md"> Learn more &raquo;</a></p>
 
         </section>
 
