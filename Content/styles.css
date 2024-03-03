@@ -105,3 +105,47 @@ footer {
 }
 
 
+/* Adjustments for DataEntry.aspx */
+#form1 {
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Styling for TextBox and DropDownList */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Styling for DropDownList arrow icon */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 12l-6-6 1.5-1.5L10 9l4.5-4.5L16 6z"/></svg>');
+    background-size: 12px;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+
+
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-item {
+    width: 48%; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+

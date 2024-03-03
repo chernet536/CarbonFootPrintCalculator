@@ -1,34 +1,47 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="CarbonFootPrintCalculator.Dashboard" %>
+﻿<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="CarbonFootPrintCalculator.Dashboard" %>
 
-<!DOCTYPE html>
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+    <main aria-labelledby="title" class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container">
+            <div class="row">
+                <!-- Transport Emissions Section -->
+                <div class="col-md-7 mb-4">
+                    <div class="card">
+                        <h1 class="card-header text-center">Transport Emissions</h1>
+                        <div class="card-body text-center">
+                            <!-- Transport Emissions Form Controls -->
+                            <!-- Add your GridView here -->
+                            <asp:GridView runat="server" ID="gvTransportEmissions" AutoGenerateColumns="False" CssClass="table table-striped">
+                                <Columns>
+                                    <asp:BoundField DataField="VehicleType" HeaderText="Vehicle Type" />
+                                    <asp:BoundField DataField="Distance" HeaderText="Distance" />
+                                    <asp:BoundField DataField="FuelType" HeaderText="Fuel Type" />
+                                    <asp:BoundField DataField="FuelEfficiency" HeaderText="Fuel Efficiency" />
+                                    <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" />
+                                </Columns>
+                            </asp:GridView>
+                        </div>
+                    </div>
+                </div>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-<!-- Display Transport Emissions Data -->
-<h1> Transport Emissions </h1>
-<asp:GridView runat="server" ID="gvTransportEmissions" AutoGenerateColumns="False">
-    <Columns>
-        <asp:BoundField DataField="VehicleType" HeaderText="Vehicle Type" />
-        <asp:BoundField DataField="Distance" HeaderText="Distance" />
-        <asp:BoundField DataField="FuelType" HeaderText="Fuel Type" />
-        <asp:BoundField DataField="FuelEfficiency" HeaderText="Fuel Efficiency" />
-        <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" />
-    </Columns>
-</asp:GridView>
-
-<!-- Display Electricity Consumption Data -->
-<h1> Electricity Emissions </h1>
-<asp:GridView runat="server" ID="gvElectricityConsumption" AutoGenerateColumns="False">
-    <Columns>
-        <asp:BoundField DataField="EnergySource" HeaderText="Energy Source" />
-        <asp:BoundField DataField="ElectricityUsage" HeaderText="Electricity Usage (kWh)" />
-        <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" />
-    </Columns>
-</asp:GridView>
-        </form>
-</body>
-</html>
+                <!-- Electricity Consumption Section -->
+                <div class="col-md-5 mb-4">
+                    <div class="card">
+                        <h1 class="card-header text-center">Electricity Emissions</h1>
+                        <div class="card-body text-center">
+                            <!-- Electricity Emissions Form Controls -->
+                            <!-- Add your GridView here -->
+                            <asp:GridView runat="server" ID="gvElectricityConsumption" AutoGenerateColumns="False" CssClass="table table-striped">
+                                <Columns>
+                                    <asp:BoundField DataField="EnergySource" HeaderText="Energy Source" />
+                                    <asp:BoundField DataField="ElectricityUsage" HeaderText="Electricity Usage (kWh)" />
+                                    <asp:BoundField DataField="EntryDate" HeaderText="Entry Date" />
+                                </Columns>
+                            </asp:GridView>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</asp:Content>
