@@ -24,6 +24,15 @@ namespace CarbonFootPrintCalculator
         protected global::System.Web.UI.WebControls.GridView gvTransportEmissions;
 
         /// <summary>
+        /// lblTotalTransportFootprint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotalTransportFootprint;
+
+        /// <summary>
         /// gvElectricityConsumption control.
         /// </summary>
         /// <remarks>
@@ -31,5 +40,14 @@ namespace CarbonFootPrintCalculator
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvElectricityConsumption;
+
+        /// <summary>
+        /// lblTotalElectricityFootprint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotalElectricityFootprint;
     }
 }

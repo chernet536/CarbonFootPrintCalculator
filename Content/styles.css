@@ -50,7 +50,6 @@ h1 {
 
 
 /* Navigation bar styles */
-
 .navbar {
     background-color: #ffffff;
 }
@@ -74,6 +73,7 @@ footer {
     margin-top: 20px;
     color: #777;
 }
+/**/
 
 .content {
     margin-top: 80px;
@@ -98,14 +98,13 @@ footer {
     text-decoration: none !important;
 }
 
-
 #registrationForm {
     margin-top: -30%;
     margin-left: -10%;
 }
 
 
-/* Adjustments for DataEntry.aspx */
+/* Styling for DataEntry.aspx */
 #form1 {
     padding: 20px;
 }
@@ -114,6 +113,7 @@ label {
     font-weight: bold;
     margin-top: 10px;
 }
+
 
 /* Styling for TextBox and DropDownList */
 input[type="text"],
@@ -144,8 +144,9 @@ select {
 }
 
 .grid-item {
-    width: 48%; /* Adjust as needed */
+    width: 48%; 
     margin-bottom: 20px;
 }
+
 
 
